@@ -8,6 +8,7 @@
 
 <!-- <form action="{% url 'order' %}" method="get"> -->
 <!-- <form enctype="multipart/form-data" action="{% url 'order' %}" method="post"> -->
+<!-- <form action="{% url 'order' %}" method="post" novalidate> -->
 <form action="{% url 'order' %}" method="post">
     {% csrf_token %}
     {{ pizzaform }}

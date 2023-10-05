@@ -28,6 +28,9 @@ class PizzaForm(forms.ModelForm):
 
     # image = forms.ImageField()
 
+    # email = forms.EmailField()
+    # url = forms.URLField()
+
     class Meta:
         model = Pizza
         fields = ['topping1', 'topping2', 'size']
