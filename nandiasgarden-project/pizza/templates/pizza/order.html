@@ -11,6 +11,14 @@
 <!-- <form action="{% url 'order' %}" method="post" novalidate> -->
 <form action="{% url 'order' %}" method="post">
     {% csrf_token %}
+    <!-- {{ pizzaform.as_p }} -->
+    <!-- <table>
+        {{ pizzaform.as_table }}
+    </table> -->
+    <!-- <ol>
+        {{ pizzaform.as_ul }}
+    </ol>
+ -->
     {{ pizzaform }}
     <input type="submit" value="Order Pizza">
 </form>
