@@ -9,3 +9,13 @@
     {{ pizzaform }}
     <input type="submit" value="Order Pizza">
 </form>
+
+<br><br>
+
+Want more than one pizza?
+
+<form action="{% url 'pizzas' %}" method="get">
+    {% csrf_token %}
+    {{ multiple_form }}
+    <input type="submit" value="Order Pizzas">
+</form>
